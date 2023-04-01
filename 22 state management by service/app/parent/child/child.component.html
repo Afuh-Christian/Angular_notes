@@ -1,0 +1,8 @@
+
+<li>{{book.name}}</li>
+<ng-container *ngIf="notadded">
+    <button (click) = "addtoCard()">Add to card</button>
+</ng-container>
+<ng-container  *ngIf="!notadded">
+    <button (click) = "removefromCard()">remove from card</button>
+</ng-container>

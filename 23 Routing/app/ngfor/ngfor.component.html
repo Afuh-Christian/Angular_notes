@@ -1,0 +1,7 @@
+<p>ngfor works!</p>
+
+<ul >
+    <ng-container *ngFor="let book of books ; let i = index">
+    <li>{{i + 1}} - {{book.name}}</li>
+   </ng-container>  
+</ul>

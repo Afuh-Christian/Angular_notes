@@ -1,0 +1,8 @@
+<p>parent works!</p>
+
+<ul>
+<ng-container *ngFor="let book of books">
+    <!-- passing props  -->
+<app-child (emitBook)="addtoCard($event)" [book]="book"></app-child>
+</ng-container>
+</ul>

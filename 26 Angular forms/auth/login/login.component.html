@@ -1,0 +1,25 @@
+
+<div class="flex m-auto h-screen justify-center">
+    <form action="" class="p-4  rounded-lg border m-auto "  (ngSubmit)="submit()">
+        <h1 class="text-center">Login</h1>
+        <div class="my-6 w-full">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="password" class="p-2 rounded w-full" placeholder="Email Address"
+        [(ngModel)]="form.email"
+        >
+        {{form.email}}
+        </div>
+        <div class="my-6 w-full" w-full>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" class="p-2 rounded w-full" placeholder="Password "
+        [(ngModel)]="form.password"
+        >
+        {{form.password}}
+        </div>
+       
+        <div class="my-6">
+            <input type="submit" value="Submit" class="p-2 w-full bg-purple-700 text-white rounded ">
+        </div>
+        
+    </form>
+</div>

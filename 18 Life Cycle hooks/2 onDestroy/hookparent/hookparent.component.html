@@ -1,0 +1,8 @@
+<p>hookparent works!</p>
+
+<button (click)="onVisibleC()">show/remove</button>
+
+<ng-container *ngIf="visible">
+    <app-hookchild></app-hookchild>
+</ng-container>
+
